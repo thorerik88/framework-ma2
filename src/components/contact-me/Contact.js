@@ -3,7 +3,7 @@ import Heading from "../layout/Heading";
 function home() {
   return (
     <>
-      {/* <Heading heading={"List of Universities"} /> */}
+      <Heading heading={"List of Universities"} />
     </>
   );
 }
