@@ -27,6 +27,10 @@ Nav a {
   background: white;
 }
 
+.uni-wrapper .box p {
+  color: blue;
+}
+
 @media screen and (min-width: 767px) {
   .uni-wrapper {
     -ms-flex-wrap: wrap;
