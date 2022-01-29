@@ -12,7 +12,6 @@ function UniList() {
       try {
         const response = await fetch(API);
         const json = await response.json();
-        console.log(json)
         setUniversities(json);
       }
       catch (error) {
@@ -38,6 +37,7 @@ function UniList() {
 
       {universities.map((university) => {
         uniKey += 1
+
         const { name, web_pages } = university
         return <UniItem key={uniKey} name={name} web_pages={web_pages} />
       })}

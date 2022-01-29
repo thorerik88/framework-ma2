@@ -6,7 +6,7 @@ h1 {
 Nav a {
   text-decoration: none;
   color: inherit;
-  margin-right: 1.5rem;
+  margin: 1rem 1.5rem 1rem;
 }
 
 .uni-wrapper {
@@ -25,6 +25,29 @@ Nav a {
   padding: 1rem;
   margin: 1rem;
   background: white;
+}
+
+@media screen and (min-width: 767px) {
+  .uni-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .uni-wrapper .box {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .uni-wrapper .box {
+    width: 30%;
+  }
 }
 
 .form-wrapper {

@@ -16,7 +16,7 @@ const schema = yup.object().shape({
     //     return value
     //   }
     // })
-    .transform((value) => (isNaN(value) ? undefined : value))
+    .transform((value) => (isNaN(value) ? undefined : value)) // remove NaN error when field is empty
     .nullable()
     .nullable()
     .required("Please enter your age")
@@ -39,10 +39,13 @@ export function ValForm() {
   function onSubmit(data) {
     const successMsg = document.querySelector(".form-success");
     successMsg.innerHTML = `The form is submitted`;
-    console.log(data)
   }
-
-  console.log(errors)
+  
+  if (Object.keys(errors).length > 0) {
+    console.log(errors)
+  }
+  
+  
 
   return ( 
   <div className="form-wrapper">
