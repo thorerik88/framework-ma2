@@ -1,6 +1,5 @@
-import Home from "./components/home/Home";
-import NavMenu from "./components/layout/NavMenu";
-import './App.css';
+import NavMenu from "./js/components/layout/NavMenu";
+import './css/style.css';
 
 function App() {
   return (

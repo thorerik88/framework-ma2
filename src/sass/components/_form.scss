@@ -1,0 +1,23 @@
+.form-wrapper {
+  display: flex;
+  margin-bottom: 4rem;
+  justify-content: center;
+
+  form {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+
+    button {
+      margin: 1rem 0;
+    }
+
+    span {
+      color: red;
+    }
+
+    .form-success {
+      color: green;
+    }
+  }
+}

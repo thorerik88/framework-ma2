@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { API } from "../../../constants/api";
+import { API } from "../../constants/api";
 import UniItem from "./UniItem";
 
 function UniList() {
@@ -15,7 +15,7 @@ function UniList() {
         console.log(json)
         setUniversities(json);
       }
-      catch(error) {
+      catch (error) {
         setError(error);
       }
       finally {
@@ -35,12 +35,12 @@ function UniList() {
   let uniKey = 0;
   return (
     <>
-    
-    {universities.map((university) => {
-      uniKey += 1
-      const { name, web_pages } = university
-      return <UniItem key={uniKey} name={name} web_pages={web_pages}/>
-    })}
+
+      {universities.map((university) => {
+        uniKey += 1
+        const { name, web_pages } = university
+        return <UniItem key={uniKey} name={name} web_pages={web_pages} />
+      })}
     </>
   )
 }
